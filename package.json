@@ -1,0 +1,11 @@
+{
+  "name": "airbnbredo",
+  "version": "1.0.0",
+  "description": "airbnb clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "author": "Robert Machamud",
+  "license": "ISC"
+}
