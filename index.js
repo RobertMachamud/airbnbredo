@@ -1,14 +1,19 @@
 // import express and path
 const express = require('express')
-const path = ('path')
+const path = require('path')
 // app runs exress
 const app = express()
 
 // import database
-const db = require('./db')
+const db = require('./db.js')
 
 // static to read files like html ctc
-app.use(express.static.path.join(__dirname, '/client/index.html'))
+app.use('/', express.static(path.join(__dirname, 'client')))
+
+// gets
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/index.html'))
+})
 
 
 
