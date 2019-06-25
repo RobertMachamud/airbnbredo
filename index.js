@@ -7,7 +7,7 @@ const app = express()
 // import database
 const db = require('./db.js')
 
-// static to read files like html ctc
+// static to read files like html css
 app.use('/', express.static(path.join(__dirname, 'client')))
 
 // gets

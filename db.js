@@ -1,8 +1,8 @@
 // mongo db
-// pg reqired -
+// pg reqired - import
 const {Client} = require('pg')
 
-// create connection with database - cr new Client
+// create connection with database - create new Client
 const db = new Client ({
   // connectionstring to sql tables - airbnb
   connectionString: 'postgres://robertmachamud:@localhost:5432/airbnb'
