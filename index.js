@@ -16,6 +16,12 @@ app.get('/', (req, res) => {
 })
 
 
+// get the api  of all products first - import from controller
+// /api/prop -> shows your imported file-code on localhost:3000/api/prop.
+// ./  means the whole file gets imported as prop._get.js
+app.get('/api/properties', require('./controller/properties_get.js'))
+
+
 
 app.listen(3000, () => {
   console.log('Server is listening on Port 3000');

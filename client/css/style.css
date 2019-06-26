@@ -91,7 +91,7 @@ header {
 }
 
 
-.cat_cont
+#cat_cont
 {
 		display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 8fr;
