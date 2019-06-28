@@ -7,14 +7,20 @@ const app = express()
 // import database
 const db = require('./db.js')
 
+require('dotenv').config()
+
 // static to read files like html css
 app.use('/', express.static(path.join(__dirname, 'client')))
 
-// gets
+// gets api
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/index.html'))
+	res.sendFile(path.join(__dirname, 'client/index.html'))
 })
 
+// for countries
+app.get('/api/countries', require('./controller/countries_get.js'))
+// for categories
+app.get('/api/types', require('./controller/types_get.js'))
 
 // get the api  of all products first - import from controller
 // /api/prop -> shows your imported file-code on localhost:3000/api/prop.
@@ -23,6 +29,6 @@ app.get('/api/properties', require('./controller/properties_get.js'))
 
 
 
-app.listen(3000, () => {
-  console.log('Server is listening on Port 3000');
+app.listen(process.env.PORT, () => {
+	console.log(`Server is listening on Port ${process.env.PORT}`);
 })
