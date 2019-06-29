@@ -32,3 +32,5 @@ app.get('/api/properties', require('./controller/properties_get.js'))
 app.listen(process.env.PORT, () => {
 	console.log(`Server is listening on Port ${process.env.PORT}`);
 })
+
+// Port 47582
