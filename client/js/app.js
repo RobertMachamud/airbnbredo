@@ -17,12 +17,12 @@
 window.onload = () => {
 
 
-	// axios.get('/api/categories').then( (res) => {
-	// 	let categories = res.data
-	// 	let categories_bx = document.getElementById('cat_cont')
+	// axios.get('/api/types').then( (res) => {
+	// 	let types = res.data
+	// 	let types_bx = document.getElementById('cat_cont')
 	//
-	// 	categories.forEach( (ca) => {
-	// 		categories_bx.inertAdjacentHTML('beforeEnd', `
+	// 	types.forEach( (ca) => {
+	// 		types_bx.inertAdjacentHTML('beforeEnd', `
 	//
 	// `)
 	//   })
