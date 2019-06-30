@@ -50,7 +50,7 @@ window.onload = () => {
 
 
 	// getting the api of properties and takes data (obj.)
-	axios.get('api/properties').then( (res) => {
+	axios.get('/api/properties').then( (res) => {
 		// putting data we get on 'api/properties' into var properties
 		let properties = res.data
 		// selecting parent(container) from your properties into var properties_bx
