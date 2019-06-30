@@ -5,7 +5,7 @@ const {Client} = require('pg')
 // create connection with database - create new Client
 const db = new Client ({
 	// connectionstring to sql tables - airbnb
-	connectionString: process.env.DARABASE_URL
+	connectionString: process.env.DATABASE_URL
 })
 
 // connect to database and handle error - just err needed
